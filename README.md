@@ -59,6 +59,7 @@ minikube service back-service --url
 Keep this command prompt open and open another one.
 
 4-Set the URL of the backend in the configmap at.\k8s_deployment\pods\myconfig.yaml:
+
 ![alt text](image.png)
 
 5-Deploy The frontend and the configmap : 
