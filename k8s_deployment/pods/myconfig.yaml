@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: myconfig
 data:
-  BACKEND_URL: "127.0.0.1:60517"
+  BACKEND_URL: "Your_URL"
