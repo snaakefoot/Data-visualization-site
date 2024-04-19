@@ -1,0 +1,20 @@
+.error-message {
+  color: white;
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #myGrid {
+    flex: 1;
+    height: auto !important;
+  }
+  
+  #myChart {
+    flex: 2;
+  }

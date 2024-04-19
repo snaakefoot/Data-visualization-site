@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #ffffff, #6ab7ff 48%, #b3d9ff);
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #6ab7ff; 
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+   font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  color: #87CEEB;;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+.error-message {
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+}
+.light-button {
+  
+  border: none;
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding for the button */
+  margin-right: 20px; /* Add space between buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Bold text */
+  display: inline-block; /* Ensures buttons appear in-line */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+
+}
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust height as needed */
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+}
+
+.path {
+  stroke: #87CEEB; /* Adjust color as needed */
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+
