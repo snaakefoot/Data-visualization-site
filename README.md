@@ -1,9 +1,9 @@
-# Challenge Project
+# Large-Scale Data Visualization Platform
 
 ## Overview
 
 This project uses a Cassandra database with a 2-node cluster for efficient scalability. The backend, powered by Scala and Akka HTTP, ensures high performance. React and Material UI are employed for a sleek and intuitive frontend interface.
-
+You Can watch a demo for this app here : https://www.youtube.com/watch?v=mrLCdKLPJyc
 ### Key Features
 
 - **Secure Authentication**: Features robust login and signup processes using JWT tokens, providing a secure and reliable authentication system.
