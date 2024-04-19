@@ -89,6 +89,6 @@ kubectl apply -f .\k8s_deployment\pods\deployment-front.yaml
 3- In 2 different command prompt, Run run each one of these commmands(Once the pods are ready and the Backend finished uploading the data to Cassandra):
 ```bash
  kubectl  port-forward svc/front-service 3000:3000
- kubectl  port-forward svc/front-service 8080:8080
+ kubectl  port-forward svc/back-service 8080:8080
 ```
 Now the App is running on: http://127.0.0.1:3000/
